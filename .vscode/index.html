@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+
+    <nav id="navbar-example" class="navbar navbar-expand-lg bg-dark  fixed-top  ">
+        <div class="container">
+            <div class="d-flex p-3 gap-3 w-25 ">
+                <img class=" w-25 " src="../img/logo@2x.png" alt="">
+
+                <a class="text-white navbar-brand fs-6" href="#">Weather <br> <span class="text-white-50 fs-6">tagline
+                        goes here</span> </a>
+
+            </div>
+
+            <button class="navbar-toggler text-bg-dark " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+
+                    <li class="nav-item p-3 ">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">NewsLive</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">cameras</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <!--  ________________header ________________   -->
+
+    <header class="min-vh-100 pt-5 ">
+
+        <div class="container">
+            <div class="row">
+
+
+                <!--  ________________input search ________________   -->
+                <input class=" form-control position-relative text-white" type="text"
+                    placeholder="Find your location..." id="search">
+
+
+                <!--  ________________tody data secetion________________   -->
+                <div class="container mb-5 g-0  ">
+                    <div class="row rounded-5 p-4">
+                        <div class="item col-lg-4 td4 text-center " id="">
+                            <div class="d-flex  justify-content-between align-items-center bg-dark" id="tody-data">
+                                <p id="first-day" class="text-white-50 bg-dark  p-3 px-5 w-100 fs-4"> Thurshthay</p>
+                                <span class="d-flex gap-2 pe-2">
+                                    <span id="data-NumfistDay" class="text-white-50 bg-dark text-danger ">30</span>
+                                    <span id="data-MunsfistDay" class="text-white-50 bg-dark  ">may</span>
+                                </span>
+
+                            </div>
+
+
+
+                            <div class="text-start">
+                                <p id="toda-location" class=" text-white-50 pb-4 fs-3">cairo</p>
+                                <div class="d-flex g-2">
+                                    <h1 id="Degree-Temper" class="text-white fs-1 pb-4">25.9 </h1>
+                                    <img src="../img/113.png" id="imgWeather" alt="">
+
+
+                                </div>
+
+
+                                <h6 id="texWeather" class=" text-info pb-4" id="Clear">Clear</h6>
+                                <div class="d-flex gap-4">
+                                    <p class="text-white-50" id="Clearumbrella""><i class=" fa-solid fa-umbrella"></i>
+                                    </p><span class="text-white-50" id="huMan">22%</span>
+
+
+                                    <p class="text-white-50"><i class="fa-solid fa-wind"></i> </p> <span id="wind"
+                                        class="text-white-50">18km/h</span>
+
+
+                                    <p class="text-white-50" id="compass"><i class="fa-regular fa-compass"></i> </p>
+                                    <span id="windDirection" class="text-white-50">East</span>
+
+
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 tu text-center ">
+
+                            <p class="text-white-50 nextDay  p-3 text-center next-day th fs-4  " id="th">Thurshthay</p>
+                            <img class="icontow" src="../img/icon-umberella.png" alt="">
+                            <h3 class="text-white NextMaxTemp pb-4">39.9oC</h3>
+                            <h5 class="text-white-50 NextMinTemp pb-4">27.3o</h5>
+                            <h6 class=" text-info pb-4 Weathertype"> Sunny</h6>
+                        </div>
+
+
+
+                        <div class="col-lg-4 td4 text-center">
+
+                            <h1 class="text-white-50 nextDay bg-dark p-3 text-center next-day fs-4">Thurshthay</h1>
+                            <img class="icontow" src="../img/icon-umberella.png" alt="">
+                            <h3 class="text-white NextMaxTemp pb-4" id="">39.9oC</h3>
+                            <h5 class="text-white-50 NextMinTemp pb-4" id="">27.3o</h5>
+                            <h6 class=" text-info pb-4 Weathertype
+                            "> Sunny</h6>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <script src="https://kit.fontawesome.com/ba33594f54.js" crossorigin="anonymous"></script>
+                <script src="weather.js"></script>
+                <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
